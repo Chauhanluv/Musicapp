@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup & Login Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:  rgb(63 32 90);
+            
+        }
+
+        .form-container {
+          margin-top: 150px;
+          
+            width: 500px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: whitesmoke;
+            border-radius: 0px 40px;
+        }
+
+        .form-container input {
+            padding: 0px 10px;
+            display: flex;
+            flex-direction: column;
+           
+            height: 25px;
+            width: 200px;
+            border-radius: 10px;
+            margin: 10px 10px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: dodgerblue;
+    
+    border: none;
+    width: 71px;
+    border-radius: 5px;
+    padding: 4px 12px;
+    margin-left: 80px;
+        }
+        .form-container img{
+            width: 100px;
+        }
+        .head{
+            display: flex;
+    justify-content: space-around;
+    height: 66px;
+    width: 350px;
+        }
+        .btn1{
+            border: none;
+            background-color: whitesmoke;
+            font-size: 20px;
+            color:purple;
+        }
+        .btn2{
+            border: none;
+            background-color: whitesmoke;
+            font-size: 20px;
+            color:purple;
+        }
+        .btn{
+            width: 80px;
+            height: 30px;
+            color: white;
+            background-color:rgb(63 32 90);
+            margin-left: 87px;            
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+       
+        <img src="./img/user-defined.jpg" alt="">
+        <div class="container">
+            <form action="/signup" method="post">
+                <input name="email" type="text"  placeholder="Email">
+                <input name="username" type="text"  placeholder="Enter Username">
+                <input name="password" type="password"  placeholder="Password">
+                <button class="btn" type="submit">Sign up</button>
+            </form>
+        </div>
+        
+    </div>
